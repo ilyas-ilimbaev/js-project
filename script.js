@@ -19,6 +19,6 @@ console.log("Cтоимость верстки экрана" + ": " + screenPrice
 console.log("Cтоимость разработки сайта" + ": " + fullPrice + " рублей");
 //работа со строкой screens
 console.log(screens.toLowerCase());
-console.log(screens.split(" ", 2));
+console.log(screens.split());
 //вывод процент отката посреднику за работу
 console.log("Процент отката посреднику за работу" + ": " + fullPrice * (rollback/100));
