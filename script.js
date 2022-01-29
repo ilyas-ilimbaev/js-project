@@ -7,7 +7,7 @@ let adaptive = true;
 
 //заголовок
 console.log(title);
-//цена
+//цена верстки
 console.log(fullPrice);
 //наличие адаптивности
 console.log(adaptive);
