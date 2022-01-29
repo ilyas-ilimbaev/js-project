@@ -14,9 +14,9 @@ console.log(adaptive);
 //вывод длины строки
 console.log("Длина строки" + ": " + screens.length);
 //вывод стоимости верстки экрана
-console.log("Cтоимость верстки экрана" + ": " + screenPrice + " рублей/ " + "384 долларов/ " + "11 094 гривен/ " + "244,329 юани");
+console.log("Cтоимость верстки экрана" + ": " + screenPrice + " рублей");
 //вывод стоимости разработки сайта
-console.log("Cтоимость разработки сайта" + ": " + fullPrice + " рублей/ " + "384 долларов/ " + "11 094 гривен/ " + "244,329 юани");
+console.log("Cтоимость разработки сайта" + ": " + fullPrice + " рублей");
 //работа со строкой screens
 console.log(screens.toLowerCase());
 console.log(screens.split(" ", 2));
