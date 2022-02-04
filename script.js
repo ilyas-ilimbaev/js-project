@@ -11,7 +11,7 @@ let servicePrice2 = +prompt("Сколько это будет стоить?");
 let allServicePrices;
 let fullPrice;
 let servicePercentPrice;
-let rollback = 10;
+let rollback = 30;
 
 
 
