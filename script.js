@@ -38,11 +38,3 @@ if (fullPrice > 30000) {
 } else if (fullPrice < 0) {
     console.log(terms = "Что то пошло не так");
 }
-
-console.log(typeof title);
-console.log(typeof fullPrice);
-console.log(typeof adaptive);
-console.log(screens.length);
-console.log("Стоимость верстки экранов " + screenPrice + " рублей");
-console.log("Стоимость разработки сайта " + fullPrice + " рублей");
-console.log(screens.toLowerCase().split(", "));
