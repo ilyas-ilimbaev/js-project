@@ -1,7 +1,7 @@
 let title = "2 урок по js";
 let screens = "Простые, Сложные, Интерактивные";
 let screenPrice = 2000;
-let rollback = 50;
+let rollback = 30;
 let fullPrice = 30000;
 let adaptive = true;
 
