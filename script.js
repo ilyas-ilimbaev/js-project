@@ -7,8 +7,9 @@ let service1 = prompt("Какой дополнительный тип услуг
 let servicePrice1 = +prompt("Сколько это будет стоить?");
 let service2 = prompt("Какой дополнительный тип услуги нужен?");
 let servicePrice2 = +prompt("Сколько это будет стоить?");
+let rollback = 30;
 let fullPrice = screensPrice + servicePrice1 + servicePrice2;
-let servicePercentPrice = fullPrice - (fullPrice / 100 * 30);
+let servicePercentPrice = fullPrice - (fullPrice / 100 * rollback);
 
 
 if (fullPrice >= 30000) {
