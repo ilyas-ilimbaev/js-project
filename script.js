@@ -8,8 +8,8 @@ let servicePrice1 = +prompt("Сколько это будет стоить?");
 let service2 = prompt("Какой дополнительный тип услуги нужен?");
 let servicePrice2 = +prompt("Сколько это будет стоить?");
 let fullPrice = screensPrice + servicePrice1 + servicePrice2;
-let rollback = fullPrice * (30 / 100);
-let servicePercentPrice = fullPrice - rollback;
+let rollback = 30;
+let servicePercentPrice = fullPrice - (rollback / 100);
 
 
 if (fullPrice >= 30000) {
@@ -25,13 +25,13 @@ if (fullPrice >= 30000) {
     console.log("Что то пошло не так");
 }
 
-console.log(title);
-console.log(adaptive);
+console.log(typeof title);
+console.log(typeof adaptive);
 console.log(screens);
 console.log(screensPrice);
 console.log(service1);
 console.log(servicePrice1);
 console.log(service2);
 console.log(servicePrice2);
-console.log("Стоимость " + fullPrice);
+console.log("Стоимость " + typeof fullPrice);
 console.log("Итоговая стоимость " + Math.ceil(servicePercentPrice));
