@@ -19,9 +19,6 @@ const asking = function () {
     title = prompt("Как называется ваш проект?", "Калькулятор верстки");
     screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные или Интерактивные");
 
-    // while (!isNumber(screenPrice)) {
-    //     screenPrice = prompt("Сколько будет стоить данная работа?");
-    // }
     do {
         screenPrice = +prompt("Сколько будет стоить данная работа?");
     } while (!isNumber(screenPrice));
@@ -31,22 +28,24 @@ const asking = function () {
 
 const getAllServicePrices = function() {
     let sum = 0;
+    let servicePrice;
 
     for (let i = 0; i < 2; i++) {
         if (i === 0) {
             service1 = prompt("Какой дополнительный тип услуги нужен?");
+            servicePrice = +prompt("Сколько это будет стоить?");
+            while (!isNumber(servicePrice)) {
+                servicePrice += +prompt("Сколько это будет стоить?");
+            }
         } else if (i === 1) {
             service2 = prompt("Какой дополнительный тип услуги нужен?");
-        }
-        //sum += isNumber(prompt("Сколько это будет стоить?"));
-        let servicePrice = +prompt("Сколько это будет стоить?");
-
-        if(isNumber(servicePrice)) {
-            sum += servicePrice;
-        } else {
             servicePrice = +prompt("Сколько это будет стоить?");
-            sum += servicePrice;
+            while (!isNumber(servicePrice)) {
+                servicePrice += +prompt("Сколько это будет стоить?");
+            }
         }
+
+        sum += servicePrice;
     }
     return sum;
     // return servicePrice1 + servicePrice2;
