@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const appData = {
     title: '',
@@ -17,7 +17,7 @@ const appData = {
         do {
             appData.screenPrice = prompt("Сколько будет стоить данная работа?");
             appData.screenPrice = Number(appData.screenPrice);
-        } while(!appData.isNumber(appData.screenPrice))
+        } while(!appData.isNumber(appData.screenPrice));
 
         appData.adaptive = confirm("Нужен ли адаптив на сайте?");
     },
@@ -76,13 +76,13 @@ const appData = {
         appData.fullPrice = appData.getFullPrice();
         appData.servicePercentPrice = appData.getServicePercentPrices();
         appData.title = appData.getTitle();
-        appData.logger()
+        appData.logger();
     },
     logger: function () {
         for (let prop in appData) {
             console.log(prop);
         }
     }
-}
+};
 
 appData.start();
