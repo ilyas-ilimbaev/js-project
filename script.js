@@ -86,3 +86,4 @@ const appData = {
 };
 
 appData.start();
+// console.log(appData.fullPrice);
