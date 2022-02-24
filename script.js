@@ -10,7 +10,7 @@ const appData = {
     allServicePrices: 0,
     fullPrice: 0,
     servicePercentPrice: 0,
-    rollback: 10,
+    rollback: 30,
     asking: function () {
         appData.title = prompt("Как называется ваш проект?", "Калькулятор верстки");
         appData.screens = prompt("Какие типы экранов нужно разработать?", "Простые, Сложные, Интерактивные");
