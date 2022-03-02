@@ -80,10 +80,9 @@ const appData = {
     },
     logger: function () {
         for (let prop in appData) {
-            console.log(prop);
+            console.log(appData[prop]);
         }
     }
 };
 
 appData.start();
-// console.log(appData.fullPrice);
